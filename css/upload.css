@@ -1,0 +1,785 @@
+@font-face {
+    font-family: -astronaut;
+    src: url('../fonts/Astronaut\ 400.otf')format('opentype');
+  }
+  
+  @font-face {
+  font-family: -bold;
+  src: url('../fonts/letter-gothic-bold.ttf')format('truetype');
+  }
+  
+  
+  @font-face {
+  font-family: -standard;
+  src: url('../fonts/letter-gothic-standard.ttf')format('truetype');
+  }
+  
+  @font-face {
+  font-family: -thin;
+  src: url('../fonts/helvetica-neue-thin.ttf')format('truetype');
+  }
+  
+  @font-face {
+  font-family: -light;
+  src: url('../fonts/Poppins-Light.ttf')format('truetype');
+  }
+  
+  
+  @font-face {
+  font-family: -medium;
+  src: url('../fonts/Poppins-Medium.ttf')format('truetype');
+  }
+  
+  @font-face {
+  font-family: -semibold;
+  src: url('../fonts/Poppins-SemiBold.ttf')format('truetype');
+  }
+
+*{
+    margin: 0;
+    padding: 0;    
+    box-sizing: border-box;
+}
+
+.swal-overlay, .show-modal, .swal-modal{
+    z-index: 3000000;
+  }
+  .swal-title{
+    font-family:-semibold; 
+  }
+  .swal-text{
+    font-family:-light; 
+  }
+  .swal-button{
+    font-family:-semibold; 
+  }
+
+
+  input[type=text], input[type=password] {
+    width: 375px;
+    height: 45px;
+    padding: 5px;
+    font-family:-light;
+    font-size: 13px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+  }
+  input[type=text]:focus, input[type=password]:focus{
+    outline: none;
+    border: 2px solid #26CBFF;
+  }
+  
+
+  .button{
+    width: 70%;
+    height: 55px;
+    padding: 5px;
+    background-color: #26CBFF;
+    border: 0;
+    color: white;
+    text-decoration: none;
+    font-family: -semibold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+
+
+body{
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 1368px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+
+
+
+.container .top-side{
+    width: 100%;
+    height: 85%;
+    background-color: white;
+    background-image: url("../img/Group-7.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+.container .top-side .menu{
+  width: 100%;
+  font-family: -medium;
+  text-align: right;
+  padding: 10px 25px;
+  font-size: 18px;
+
+  /* Flexbox */
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  justify-content:space-between;
+  flex-flow:row nowrap;
+  align-items: flex-start;
+}
+
+.container .top-side .menu .botones a{
+  text-decoration: none;
+  color: #1E1C1C;
+  margin-right: 25px;
+}
+.container .top-side .menu .botones .activo, .container .top-side .menu .botones a:focus, .container .top-side .menu .botones a:hover{
+  color: #26CBFF;
+}
+
+
+.container .top-side .menu .logout a{
+  text-decoration: none;
+  color: #26CBFF;
+}    
+
+.container .top-side .encabezado{
+  width: 100%;
+  font-family: -medium;
+  text-align: left;
+  font-size: 18px;
+  color: #1E1C1C;
+
+  /* Flexbox */
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  justify-content:center;
+  flex-flow:column nowrap;
+  align-items: center;
+}
+.container .top-side .encabezado label{
+  font-family: -medium;
+  margin-bottom: 25px;
+  color: #26CBFF;
+  font-size: 32px;
+}
+
+
+.container .top-side .banner-1{
+    width: 35%;
+    height: 75%;
+    margin-bottom: 40px;
+    padding: 1%;
+    z-index: 100;
+    border: 1px solid #707070;    
+    background-color: white;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+.container .top-side .banner-1 h1{
+  font-family: -semibold;
+  color: #1E1C1C;
+}
+
+.container .top-side .banner-1 form{
+  width: 100%;
+  height: 75%;
+
+  /* Flexbox */
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  justify-content:center;
+  flex-flow:column nowrap;
+  align-items: center;
+}
+
+.container .top-side .banner-1 .icono{
+    width: 100%;
+    height: 50%;    
+    background-image: url("../img/pdf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}    
+
+
+.container .top-side .banner-1 a{
+  display:flex;/*CSS3*/
+  align-items:center;/*Vertical align*/
+  justify-content:center;/*horizontal align*/
+}
+
+
+
+
+
+
+
+
+.container .bottom-side{
+    width: 100%;
+    height: 15%;
+    background-color: #26CBFF;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+    align-items: center;    
+}
+.container .bottom-side .banner-1{
+  width: 25%;
+  height: 100%;    
+  background-image: url("../img/Group-1.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+
+  /* Flexbox */
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  justify-content:flex-start;
+  flex-flow:column nowrap;
+  align-items: center;
+}
+
+.container .bottom-side .banner-2{
+  width: 50%;
+  height: 100%;    
+
+  /* Flexbox */
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  justify-content:center;
+  flex-flow:column nowrap;
+  align-items: center;
+}
+.container .bottom-side .banner-2 p{
+  font-family: -light;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+.container .bottom-side .banner-3{
+  width: 25%;
+  height: 100%;    
+  background-image: url("../img/Group-3.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: contain;
+
+  /* Flexbox */
+  display:flex;
+  display:-webkit-flex;
+  display:-ms-flexbox;
+  justify-content:flex-start;
+  flex-flow:column nowrap;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 740px) and (orientation: portrait){
+
+}
+
+
+
+/* Smartphones (portrait) iphone plus, a50, a70 ----------- */
+@media only screen and (min-width: 375px) and (max-width: 480px) and (orientation: portrait){
+  .container{
+    width: 100%;
+    max-width: 480px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+  .container .top-side{
+    width: 100%;
+    height: 85%;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+
+  .container .top-side .menu{
+    width: 100%;
+    font-family: -medium;
+    text-align: right;
+    padding: 25px 20px;
+    font-size: 14px;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+    align-items: flex-start;
+  }
+  
+  .container .top-side .menu .botones a{
+    text-decoration: none;
+    color: #1E1C1C;
+    margin-right: 25px;
+  }
+
+  .container .top-side .menu .logout a{
+    text-decoration: none;
+    color: #26CBFF;
+  }    
+  
+  .container .top-side .encabezado{
+    margin-top: 50px;
+    font-size: 14px;
+  }
+  .container .top-side .encabezado label{
+    font-size: 28px;
+  }
+
+
+
+  .container .top-side .banner-1{
+    width: 75%;
+    height: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 5%;
+    z-index: 100;
+    border: 1px solid #707070;    
+    background-color: white;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+  }
+}
+
+
+
+/* Smartphones (portrait 2) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 375px) and (orientation: portrait){
+  .container{
+    width: 100%;
+    max-width: 375px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+  .container .top-side{
+    width: 100%;
+    height: 85%;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+
+  .container .top-side .menu{
+    width: 100%;
+    font-family: -medium;
+    text-align: right;
+    padding: 25px 20px;
+    font-size: 14px;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+    align-items: flex-start;
+  }
+
+  .container .top-side .menu .botones a{
+    text-decoration: none;
+    color: #1E1C1C;
+    margin-right: 25px;
+  }
+
+  .container .top-side .menu .logout a{
+    text-decoration: none;
+    color: #26CBFF;
+  }    
+  
+  .container .top-side .encabezado{
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .container .top-side .encabezado label{
+    font-size: 28px;
+  }
+
+
+
+  .container .top-side .banner-1{
+    width: 85%;
+    height: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5%;
+    z-index: 100;
+    border: 1px solid #707070;    
+    background-color: white;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+  }
+
+
+
+  .container .bottom-side .banner-2 p {
+      font-family: -light;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+  }
+}
+
+
+
+/* Smartphones (portrait) <=320px ----------- */
+@media only screen and (max-width: 320px) and (orientation: portrait){
+  .container{
+    width: 100%;
+    max-width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    overflow: hidden;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+  .container .top-side{
+    width: 100%;
+    height: 85%;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:flex-start;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+
+  .container .top-side .menu{
+    width: 100%;
+    font-family: -medium;
+    text-align: right;
+    padding: 25px 20px;
+    font-size: 14px;
+
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:space-between;
+    flex-flow:row nowrap;
+    align-items: flex-start;
+  }
+
+  .container .top-side .menu .botones a{
+    text-decoration: none;
+    color: #1E1C1C;
+    margin-right: 25px;
+  }
+
+  .container .top-side .menu .logout a{
+    text-decoration: none;
+    color: #26CBFF;
+  }    
+  
+  .container .top-side .encabezado{
+    margin-top: 40px;
+    font-size: 14px;
+  }
+  .container .top-side .encabezado label{
+    font-size: 28px;
+  }
+
+
+
+  .container .top-side .banner-1{
+    width: 85%;
+    height: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5%;
+    z-index: 100;
+    border: 1px solid #707070;    
+    background-color: white;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+  }
+
+
+
+  .container .bottom-side .banner-2 p {
+      font-family: -light;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+  }
+}
+
+
+
+/* ****************************************  Style iPad's and tablet's ********************************** */
+
+
+/* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+
+/* Portrait */
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait){
+  .container .top-side .banner-1{
+    width: 85%;
+    height: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5%;
+    z-index: 100;
+    border: 1px solid #707070;    
+    background-color: white;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+  }
+
+}
+
+@media screen and (device-width: 1024px) and (device-height: 768px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape){
+
+}
+
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait */
+@media screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait){
+
+}
+
+@media screen and (device-width: 1366px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape){
+
+}
+
+
+
+
+/* ****************************************  Style computer's & Laptop's ********************************** */
+
+
+/* ----------- Desktop - 1 ----------- */
+
+@media only screen and (device-width: 1024px) and (device-height: 768px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .container{
+    width:100%;
+    max-width:1024px;
+    height: auto;
+    margin:auto;  
+    background-color: #F2F3F5;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column wrap;
+    align-items: flex-start;/*Vertical*/
+  }
+
+  .container .top-side .banner-1{
+    width: 85%;
+    height: 50%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 5%;
+    z-index: 100;
+    border: 1px solid #707070;    
+    background-color: white;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items: center;
+  }
+}  
+
+
+/* ----------- Desktop - 2 ----------- */
+@media only screen and (device-width: 1280px) and (device-height: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .container{
+    width:100%;
+    max-width:1280px;
+    height: auto;
+    margin:auto;  
+    background-color: #F2F3F5;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column wrap;
+    align-items: flex-start;/*Vertical*/
+  }
+}  
+
+
+
+/* ----------- Laptop L ----------- */
+@media only screen and (device-width: 1440px) and (device-height: 768px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .container{
+    width:100%;
+    max-width:1440px;
+    height: auto;
+    margin:auto;  
+    background-color: #F2F3F5;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column wrap;
+    align-items: flex-start;/*Vertical*/
+  }
+}
+
+
+/* ----------- HD Screen ----------- */
+@media only screen and (device-width: 1920px) and (device-height: 1080px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .container{
+    width:100%;
+    max-width:1920px;
+    height: auto;
+    margin:auto;  
+    background-color: #F2F3F5;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column wrap;
+    align-items: flex-start;/*Vertical*/
+  }
+}
+
+
+
+/* ----------- 4k Screen ----------- */
+@media only screen and (device-width: 2560px) and (device-height: 1440px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+  .container{
+    width:100%;
+    max-width:2560px;
+    height: auto;
+    margin:auto;  
+    background-color: #F2F3F5;
+  
+    /* Flexbox */
+    display:flex;
+    display:-webkit-flex;
+    display:-ms-flexbox;
+    justify-content:center;
+    flex-flow:column wrap;
+    align-items: flex-start;/*Vertical*/
+  }
+}
+
