@@ -1,7 +1,7 @@
 # gravity-evaluacion
 Pruebas tecnicas desarrollador web
 
-
+<b>Version Desktop</b> <br>
 ![signin](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_1.png)
 
 
@@ -14,7 +14,8 @@ Pruebas tecnicas desarrollador web
 ![download](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_4.png)
 
 
-Version Movil <br> \n
+
+<b>Version Movil</b> <br>
 ![signin](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_5.png)
 
 ![signup](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_6.png)
