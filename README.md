@@ -2,7 +2,6 @@
 Pruebas tecnicas desarrollador web <br> <br> <br>
 
 
-<div class="container-readme">
   <b>Version Desktop</b> <br> <br>
   ![signin](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_1.png)
 
@@ -22,4 +21,3 @@ Pruebas tecnicas desarrollador web <br> <br> <br>
   ![upload](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_7.png)
 
   ![download](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_8.png)
-</div>
