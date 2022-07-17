@@ -9,7 +9,7 @@ Pruebas tecnicas desarrollador web
 ![upload](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_3.png)
 
 ![download](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_4.png)
-
+ <br> <br> <br>
 
 
 <b>Version Movil</b> <br> <br>
