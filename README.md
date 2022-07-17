@@ -2,24 +2,6 @@
 Pruebas tecnicas desarrollador web <br> <br> <br>
 
 
-<style>
-	.container-readme{
- 	   width: 100%;
- 	   height: auto
- 	   margin: 0 auto;
- 	   overflow: hidden;
-
- 	   /* Flexbox */
- 	   display:flex;
- 	   display:-webkit-flex;
- 	   display:-ms-flexbox;
- 	   justify-content:center;
- 	   flex-flow:row nowrap;
- 	   align-items: flex-start;
-	}
-</style>
-
-
 <div class="container-readme">
   <b>Version Desktop</b> <br> <br>
   ![signin](https://raw.githubusercontent.com/smunoz91998/gravity-evaluacion/master/assets/screen_1.png)
